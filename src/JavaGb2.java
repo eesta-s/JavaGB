@@ -6,6 +6,8 @@ public class JavaGb2 {
         all();
         System.out.print("\nNumber 3. ");
         big();
+        System.out.println("\nNumber 4. ");
+        two();
     }
 
     public static void mas() {
@@ -37,6 +39,19 @@ public class JavaGb2 {
             if (arr[i] < 6)
                 arr[i] *= 2;
             System.out.print(arr[i] + " ");
+        }
+    }
+
+    public static void two() {
+        int c = 1;
+        int[][] ms = new int[5][5];
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                ms[i][j] = c;
+                System.out.print(ms[i][j] + " ");
+                c++;
+            }
+            System.out.println();
         }
     }
 }
